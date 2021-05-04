@@ -31,7 +31,12 @@ int main() {
 	printf("\n\n\n");
 	printf("   +----------------------------------------------------------+\n");
 	printf("   | Instructions:                                            |\n");
-	printf("   | First, give yourself a name, once you have typed         |\n   | your name confirm your choice by pressing                |\n   | the 'return', or 'enter' key on your keyboard.           |\n   |                                                          |\n   | Next, you will be prompted to select a number 1-9,       |\n   | do so, followed by pressing the 'return', or 'enter' key |\n");
+	printf("   | First, give yourself a name, once you have typed         |\n");
+	printf("   | your name confirm your choice by pressing                |\n");
+	printf("   | the 'return', or 'enter' key on your keyboard.           |\n");
+	printf("   |+--------------------------------------------------------+|\n");
+	printf("   | Next, you will be prompted to select a number 1-9,       |\n");
+	printf("   | do so, followed by pressing the 'return', or 'enter' key |\n");
 	printf("   +----------------------------------------------------------+\n\n");
 	printf("   Welcome...\n");
 	printf("   Player One, please give yourself a name: ");
