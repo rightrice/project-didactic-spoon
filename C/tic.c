@@ -6,10 +6,16 @@
 #include <time.h>
 #include <windows.h>
 
-
+/* these are to be called upon
+later as part of the game*/
 void displayGame();
 int makeChoice(int,int);
 void checkGameWin();
+/* The following voids are for text colors
+and are made here for easy use throughout the code*/
+void blue() {
+	printf("\033[0;36m");
+}
 void green() {
 	printf("\033[0;32m");
 }
@@ -26,15 +32,16 @@ int moveMaker = 0;
 
 int main() {
     int i, spot;
-	system("cls");	
-	green();
+	system("cls");
+	blue();
 	printf("\n\n\n");
 	printf("   +----------------------------------------------------------+\n");
 	printf("   | Instructions:                                            |\n");
+	printf("   |                                                          |\n");
 	printf("   | First, give yourself a name, once you have typed         |\n");
 	printf("   | your name confirm your choice by pressing                |\n");
 	printf("   | the 'return', or 'enter' key on your keyboard.           |\n");
-	printf("   |+--------------------------------------------------------+|\n");
+	printf("   +----------------------------------------------------------+\n");
 	printf("   | Next, you will be prompted to select a number 1-9,       |\n");
 	printf("   | do so, followed by pressing the 'return', or 'enter' key |\n");
 	printf("   +----------------------------------------------------------+\n\n");
