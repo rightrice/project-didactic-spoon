@@ -104,7 +104,7 @@ void displayGame() {
 	 printf("   Two Player Tic-Tac-Toe v.0.2.1\n\n");
 	 colorReset();
 	 green();
-	 printf("   Created By Alan Specchio Jr,\n   in association with [ ASPECT ]\n\n");
+	 printf("   Created By Rhino,\n   in association with [ ASPECT ]\n\n");
 	 colorReset();
 	 purple();
 	 printf("   Game Server Time: %s", asctime(est));
