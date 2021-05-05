@@ -77,9 +77,9 @@ int main() {
 	printf("\t       +----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+\n");
 	colorReset();
 	printf("\n\n");
-	return (420);
+	return (01);
 }
-void menuSelection( char *userName) {	
+void menuSelection( char *userName ) {	
 	yellow();
 	printf("\n   %s, ", userName);
     printf("Select an option, 0-2.  \n\n\n");
@@ -90,8 +90,17 @@ void menuSelection( char *userName) {
 	printf("     Menu Selection: ");
 	fscanf(stdin, "%d", menuSelection);
 	colorReset();
-	
+	return (02);
 }
+void examine(){
+	if menuSelection == '0'{
+		printf("Test");
+	}else if menuSelection == '1'{
+		printf("Test 2");
+	}else if menuSelection == '2'{
+		printf("Test 3");
+	}
+};
 
 
 
