@@ -3,7 +3,7 @@
 	 | Created by Rhino |
 	 +------------------+
  - For the final project i chose to incorporate some things we worked on during the class this semester.
- - This project is based on */
+ - This project is based on the periodic table and consists of arrays, variables and other fun stuff.*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -67,7 +67,7 @@ int main() {
 	printf("\t\t 2) Add information\n");
 	printf("\t\t 3) Exit\n\n");
 	int selection [1];
-	printf("    Selection: ");
+	printf("     Selection: ");
 	fscanf(stdin, "%1d", selection);
 	colorReset();
 	return (420);
