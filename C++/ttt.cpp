@@ -1,4 +1,4 @@
-/*	Created by Alan Specchio
+/*	Created by Rhino
 	Property of ASPECT*/
 
 #include <stdio.h>
