@@ -7,7 +7,7 @@
 #include <windows.h>
 
 // Game functions
-int choose();
+extern int choose();
 void displayUniverseMap();
 void displayWorldMap();
 void travelUniverses();

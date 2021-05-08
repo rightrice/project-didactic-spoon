@@ -15,6 +15,7 @@ int playerLocation; //gives you your current location in the multiplex of univer
 int flee; //will tell you whether or not you are able to flee from a bad situation
 int areaDiscovery; //this will tell you whether or not you have discovered an area yet
 int artifactsDiscovered; // this is how many aritfacts you have found throughout the multiplex
+int choose();
 
 // Player Credentials
 char playerName[20]; // what your player is called
@@ -41,29 +42,29 @@ int main(int choose){
 	printf("\t\t *------------------------*\n");
 	printf("\t\t | Welcome to The Cosmos! |\n");
 	printf("\t\t *------------------------*\n\n");
+	prinft("\t\t   A CLI adventure game");
 	Sleep (150);
 	printf("\t\t Please enter your name, adventurer:  ");
 	fscanf (stdin, "%20s", playerName);
 	Sleep (200);
 	printf("\n \t\t   %s, ", playerName);
 	printf("you may now begin your crusade through the Cosmos.\n");
-	
-	
-	
-	printf("\t\t   When you see [ X ] followed by options, \n");
-	printf("\t\t   this means you must choose which path you want to take. ");
 	colorReset();
 	printf("\n\n\n");
-	
+	printf("\t\t   When you see [ X ] followed by options, \n");
+	printf("\t\t   this means you must choose which path you want to take. ");
 	// Gameplay begins
 	Sleep (5500);
 	system("cls");
 	blue();
 	printf("\t\t   %s, your journey begins in the Cryptic Marshlands of the Jhourgen Universe.\n\n", playerName);
 	printf("\t\t   The Wise Mandronian: *arrgg* yet another traveler is attempting a journey throughout the Cosmos.\n");
-	printf("\t\t   What makes you think you can make in through this endeavour?\n\n");
+	printf("\t\t   What makes you think you can make it through this endeavour?\n\n");
 	colorReset();
 	yellow();
+	printf("\t\t   Options:\n");
+	printf("\t\t   [1. I am the strongest of the strong \t 2. I am trying to get home \t 3. I am unaware]\n\n");
+	
 	choose(&choice,3);
 	switch(choice){
 		case 1:printf("test"); break;
