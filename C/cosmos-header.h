@@ -7,7 +7,6 @@
 #include <windows.h>
 
 // Game functions
-extern int choose();
 void displayUniverseMap();
 void displayWorldMap();
 void travelUniverses();
@@ -42,4 +41,9 @@ void yellow() {
 }
 void colorReset() {
 	printf("\033[0m");
+}
+
+// Choose
+int choose(int *a, int maxChoise){
+	
 }
