@@ -8,15 +8,15 @@ suplex of blackholes at the end of the Cosmos. Enjoy! :)
 
 #include "cosmos-header.h"
 
-//Global Settings (variables)
+// Global Settings (variables)
 
-//World
+// World
 int playerLocation; //gives you your current location in the multiplex of universes
 int flee; //will tell you whether or not you are able to flee from a bad situation
 int areaDiscovery; //this will tell you whether or not you have discovered an area yet
 int artifactsDiscovered; // this is how many aritfacts you have found throughout the multiplex
 
-//Player Credentials
+// Player Credentials
 char playerName[20]; // what your player is called
 char homeUniverse[50]; // where player is originally from
 int intelligence, strength, challengesCompleted, mapCompletion;
@@ -29,26 +29,33 @@ char traveledUniverse[50]; // name of the current universe you have traveled to
 int universeNumber; // what number universe it is on your journey
 int universeWorlds; // worlds within that universe available for discovery
 
-int main(){
+int main(int choose){
 
 	int choice;
 	int playerAge;
 	
-	//Welcome Screen
+	// Welcome Screen
 	system("cls");
 	printf("\n\n\n\n");
 	yellow();
-	printf("\t\t   Welcome to The Cosmos!\n");
+	printf("\t\t *------------------------*\n");
+	printf("\t\t | Welcome to The Cosmos! |\n");
+	printf("\t\t *------------------------*\n\n");
 	Sleep (150);
-	printf("\t\t   Please enter your name, adventurer:  ");
+	printf("\t\t Please enter your name, adventurer:  ");
 	fscanf (stdin, "%20s", playerName);
 	Sleep (200);
 	printf("\n \t\t   %s, ", playerName);
 	printf("you may now begin your crusade through the Cosmos.\n");
+	
+	
+	
 	printf("\t\t   When you see [ X ] followed by options, \n");
 	printf("\t\t   this means you must choose which path you want to take. ");
 	colorReset();
 	printf("\n\n\n");
+	
+	// Gameplay begins
 	Sleep (5500);
 	system("cls");
 	blue();
@@ -57,7 +64,7 @@ int main(){
 	printf("\t\t   What makes you think you can make in through this endeavour?\n\n");
 	colorReset();
 	yellow();
-	choose (&choice,3);
+	choose(&choice,3);
 	switch(choice){
 		case 1:printf("test"); break;
 		case 2:printf("test 2"); break;
