@@ -51,7 +51,13 @@ int main() {
 	Sleep ( 1300 );
 	system("cls");
 	printf("\n\n\n");
-	printf("\t                                 Periodic Table of Elements\n");
+	printf("\t                                +----------------------------+\n");
+	printf("\t                                | Periodic Table of Elements |\n");
+	printf("\t                                +----------------------------+\n");
+	printf("\t                                   An interactive periodic\n");
+	printf("\t                                            table\n");
+	printf("\t                                      Created by Rhino\n");
+	printf("\t                                      =--------------=\n");
 	colorReset();
 	blue();
 	printf("\t+----+                                                                               +----+\n");
@@ -83,24 +89,25 @@ void menuSelection( char *userName ) {
 	yellow();
 	printf("\n   %s, ", userName);
     printf("Select an option, 0-2.  \n\n\n");
-	printf("\t\t 0) Examine\n", menuSelection[0]);
-	printf("\t\t 1) Add information\n", menuSelection[1]);
-	printf("\t\t 2) Exit\n\n", menuSelection[2]);
-	int menuSelection [1];
-	printf("     Menu Selection: ");
-	fscanf(stdin, "%d", menuSelection);
-	colorReset();
+	printf("\t\t 0) Examine\n");
+	printf("\t\t 1) Add information\n");
+	printf("\t\t 2) Exit\n\n");
+//	int menuOption;
+//	printf("     Menu Selection: ");
+//	fscanf(stdin, "%d\n", menuOption);
+//	colorReset();
 	return (02);
 }
-void examine(){
+/*void examine( void *menuSelection ){
 	if menuSelection == '0'{
 		printf("Test");
-	}else if menuSelection == '1'{
-		printf("Test 2");
-	}else if menuSelection == '2'{
-		printf("Test 3");
 	}
+	else if menuSelection == '1'{
+		printf("Test 2");		
+	}
+	else if menuSelection == '2'{
+		printf("Test 3");
+	}	
+	return (03);
 };
-
-
-
+*/
