@@ -15,6 +15,7 @@ int playerLocation; //gives you your current location in the multiplex of univer
 int flee; //will tell you whether or not you are able to flee from a bad situation
 int areaDiscovery; //this will tell you whether or not you have discovered an area yet
 int artifactsDiscovered; // this is how many aritfacts you have found throughout the multiplex
+int choose();
 
 
 // Player Credentials
