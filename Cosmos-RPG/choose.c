@@ -4,7 +4,7 @@
 int choose(int *a, int maxChoice){
 	int i=0;
     while(i==0){
-    printf("\n\n Traveler:  ");
+    printf("\n\n\t   Traveler:  ");
     scanf("%d",&*a);
     if(*a<=maxChoice && *a>0){
          printf("\n"); 
