@@ -10,6 +10,7 @@
 void displayUniverseMap();
 void displayWorldMap();
 void travelUniverses();
+int choose();
 
 //Universe Locations
 
@@ -31,14 +32,3 @@ extern int transportation; // 0 for feet, 1 for rhino, 2 for sailship, 3 for bla
 extern char traveledUniverse[50]; // name of the current universe you have traveled to
 extern int universeNumber; // what number universe it is on your journey
 extern int universeWorlds; // worlds within that universe available for discovery
-
-// text colors
-void blue() {
-	printf("\033[0;36m");
-}
-void yellow() {
-	printf("\033[1;33m");
-}
-void colorReset() {
-	printf("\033[0m");
-}

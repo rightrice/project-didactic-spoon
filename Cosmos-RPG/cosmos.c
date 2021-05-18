@@ -10,12 +10,27 @@ suplex of blackholes at the end of the Cosmos. Enjoy! :)
 
 // Global Settings (variables)
 
+// Text Colors
+void blue() {
+	printf("\033[0;36m");
+}
+void yellow() {
+	printf("\033[1;33m");
+}
+void red() {
+	printf("\033[0;31m");
+}
+void colorReset() {
+	printf("\033[0m");
+}
+
+
 // World
 int playerLocation; //gives you your current location in the multiplex of universes
 int flee; //will tell you whether or not you are able to flee from a bad situation
 int areaDiscovery; //this will tell you whether or not you have discovered an area yet
 int artifactsDiscovered; // this is how many aritfacts you have found throughout the multiplex
-int choose();
+int choice();
 
 
 // Player Credentials
@@ -31,7 +46,7 @@ char traveledUniverse[50]; // name of the current universe you have traveled to
 int universeNumber; // what number universe it is on your journey
 int universeWorlds; // worlds within that universe available for discovery
 
-int main(int choose){
+int main(){
 
 	int choice;
 	int playerAge;
@@ -43,35 +58,38 @@ int main(int choose){
 	printf("\t\t *------------------------*\n");
 	printf("\t\t | Welcome to The Cosmos! |\n");
 	printf("\t\t *------------------------*\n\n");
-	prinft("\t\t   A CLI adventure game");
+	printf("\t\t   A CLI adventure game");
 	Sleep (150);
-	printf("\t\t Please enter your name, adventurer:  ");
+	printf("\n\n\t\t   Please enter your name, adventurer:  ");
 	fscanf (stdin, "%20s", playerName);
 	Sleep (200);
 	printf("\n \t\t   %s, ", playerName);
 	printf("you may now begin your crusade through the Cosmos.\n");
 	colorReset();
 	printf("\n\n\n");
+	red();
 	printf("\t\t   When you see [ X ] followed by options, \n");
 	printf("\t\t   this means you must choose which path you want to take. ");
 	// Gameplay begins
-	Sleep (5500);
+	Sleep (7500);
+	colorReset();
 	system("cls");
 	blue();
+	printf("\n\n\n");
 	printf("\t\t   %s, your journey begins in the Cryptic Marshlands of the Jhourgen Universe.\n\n", playerName);
 	printf("\t\t   The Wise Mandronian: *arrgg* yet another traveler is attempting a journey throughout the Cosmos.\n");
 	printf("\t\t   What makes you think you can make it through this endeavour?\n\n");
 	colorReset();
 	yellow();
 	printf("\t\t   Options:\n");
-	printf("\t\t   [1. I am the strongest of the strong \t 2. I am trying to get home \t 3. I am unaware]\n\n");
+	printf("\t\t   [1] I am the strongest of the strong \t [2] I am trying to get home \t [3] I am unaware\n\n");
 	
 	choose(&choice,3);
 	switch(choice){
-		case 1:printf("test"); break;
-		case 2:printf("test 2"); break;
-		case 3:printf("test 3"); break;
-		default: printf("sorry, that is not a valid option"); break;
+		case 1:printf("\t\t   The Wise Mandronian: HaHa! Well, we shall just see about that one, wont we? Shall we place a wager?\n"); break;
+		case 2:printf("\t\t   The Wise Mandronian: Ahh, I see young one. Well, in the spirit of survival I shall entrust you with a map of the multiplex.\n\t\t   I wish you the best of luck.\n"); break;
+		case 3:printf("\t\t   The Wise Mandronian: Hmm, intriguing. Very much so. How did you stumble upon these Marshlands anyways?\n"); break;
+		default: printf("\t\t   Sorry %s, that is not a valid option", playerName); break;
 	}
 	colorReset();
 }
