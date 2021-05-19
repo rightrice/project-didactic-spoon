@@ -27,11 +27,17 @@ void colorReset() {
 
 // World
 int playerLocation; //gives you your current location in the multiplex of universes
-int flee; //will tell you whether or not you are able to flee from a bad situation
+int warp; //will tell you whether or not you are able to us warp to travel
 int areaDiscovery; //this will tell you whether or not you have discovered an area yet
 int artifactsDiscovered; // this is how many aritfacts you have found throughout the multiplex
 int choice();
 
+// Locations
+int crypticMarsh;
+int travelMarsh;
+
+//Bettergets
+int btrgts=0;
 
 // Player Credentials
 char playerName[20]; // what your player is called
@@ -86,10 +92,17 @@ int main(){
 	
 	choose(&choice,3);
 	switch(choice){
-		case 1:printf("\t\t   The Wise Mandronian: HaHa! Well, we shall just see about that one, wont we? Shall we place a wager?\n"); break;
+		case 1:printf("\t\t   The Wise Mandronian: HaHa! Well, we shall just see about that one, wont we? Well, in the spirit of survival I shall entrust you with a map of the multiplex.\n"); break;
 		case 2:printf("\t\t   The Wise Mandronian: Ahh, I see young one. Well, in the spirit of survival I shall entrust you with a map of the multiplex.\n\t\t   I wish you the best of luck.\n"); break;
-		case 3:printf("\t\t   The Wise Mandronian: Hmm, intriguing. Very much so. How did you stumble upon these Marshlands anyways?\n"); break;
+		case 3:printf("\t\t   The Wise Mandronian: Hmm, intriguing. Very much so.  Well, in the spirit of survival I shall entrust you with a map of the multiplex.\n"); break;
 		default: printf("\t\t   Sorry %s, that is not a valid option", playerName); break;
 	}
 	colorReset();
+	red();
+	printf("\n\n\t\t   The multiplex map has been added to your inventory.");
+	printf("==\t To equip the multiplex map, type cmd and hit return/enter. Then type map. \t==\n\n\n");
+	colorReset();
+	playerLocation=1;
+	warp=0;
+	comm();
 }

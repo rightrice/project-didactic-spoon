@@ -7,16 +7,30 @@
 #include <windows.h>
 
 // Game functions
-void displayUniverseMap();
 void displayWorldMap();
-void travelUniverses();
+void travelUniverse();
+void universeMap();
 int choose();
+void changeto();
+void comm();
 
-//Universe Locations
+// Jhourgen Universe Locations
+void crypticMarshlands();
+void area2();
+void area3();
+void area4();
+void area5();
+void area6();
+void area7();
+void area8();
+void area9();
+
+extern int crypticMarsh;
+extern int travelMarsh;
 
 //World
 extern int playerLocation; //gives you your current location in the multiplex of universes
-extern int flee; //will tell you whether or not you are able to flee from a bad situation
+extern int warp; //will tell you whether or not you are able to us warp to travel
 extern int areaDiscovery; //this will tell you whether or not you have discovered an area yet
 extern int artifactsDiscovered; // this is how many aritfacts you have found throughout the multiplex
 
@@ -32,3 +46,7 @@ extern int transportation; // 0 for feet, 1 for rhino, 2 for sailship, 3 for bla
 extern char traveledUniverse[50]; // name of the current universe you have traveled to
 extern int universeNumber; // what number universe it is on your journey
 extern int universeWorlds; // worlds within that universe available for discovery
+
+// Command and Bettergets
+extern int btrgts;
+char bettergets();
