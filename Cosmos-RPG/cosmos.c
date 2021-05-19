@@ -100,9 +100,11 @@ int main(){
 	colorReset();
 	red();
 	printf("\n\n\t\t   The multiplex map has been added to your inventory.");
-	printf("==\t To equip the multiplex map, type cmd and hit return/enter. Then type map. \t==\n\n\n");
+	printf("\n\t\t   To view the multiplex map, type map and hit return/enter.\n\n\n");
 	colorReset();
+	blue();
 	playerLocation=1;
 	warp=0;
 	comm();
+	colorReset();
 }

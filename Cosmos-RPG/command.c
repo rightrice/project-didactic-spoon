@@ -9,10 +9,10 @@ void comm()
     char command[50];
     i=0;
     while(i==0){
-    printf("Command:\t\t");
+    printf("\t>:  ");
         bettergets(command);
-        if(stricmp(command,"switch")==0){changeto(); i++; break;}
-        if(stricmp(command,"ft")==0){displayWorldMap(); i++; break; }
+        if(stricmp(command,"cmd")==0){changeto(); i++; break;}
+        if(stricmp(command,"map")==0){displayWorldMap(); i++; break; }
 
         if(i==0){printf("\nSorry %s, that command can't be found \n", playerName);
 		continue;
