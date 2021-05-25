@@ -79,10 +79,20 @@ void universeMap(){
      int i=0,j=0;
      char command[20];
      while(i==0){
-     printf("Warp to: \t");
+	printf("\n\t\t   Possible areas to explore:\n\n");
+	printf("\t\t      + Cryptic Marshlands(crypticMarsh)\n");
+	printf("\t\t      + Area 2(coming soon)\n");
+	printf("\t\t      + Area 3(coming soon)\n");
+	printf("\t\t      + Area 4(coming soon)\n");
+	printf("\t\t      + Area 5(coming soon)\n");
+	printf("\t\t      + Area 6(coming soon)\n");
+	printf("\t\t      + Area 7(coming soon)\n");
+	printf("\t\t      + Area 8(coming soon)\n");
+	printf("\t\t      + Area 9(coming soon)\n");
+     printf("\n\t\t   Warp to:  ");
         bettergets(command);
 
-        if(stricmp(command,"cryptic marshlands")==0 )
+        if(stricmp(command,"crypticMarsh")==0 )
            if(crypticMarsh==1)
                 if(playerLocation!=1)
                     if(warp==1){crypticMarshlands(); i++;j++;}

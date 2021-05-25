@@ -13,6 +13,7 @@ void universeMap();
 int choose();
 void changeto();
 void comm();
+void cmdls();
 
 // Jhourgen Universe Locations
 void crypticMarshlands();

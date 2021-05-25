@@ -104,7 +104,7 @@ int main(){
 	colorReset();
 	blue();
 	playerLocation=1;
-	warp=0;
+	warp=1;
 	comm();
 	colorReset();
 }
