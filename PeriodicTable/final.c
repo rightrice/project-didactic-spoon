@@ -1,9 +1,8 @@
 /*	 +------------------+
-	 |  Final Project   |
+	 |  Periodic Table  |
 	 | Created by Rhino |
 	 +------------------+
- - For the final project i chose to incorporate some things we worked on during the class this semester.
- - This project is based on the periodic table and consists of arrays, variables and other fun stuff.*/
+*/
 
 #include "periodic-header.h"
 
