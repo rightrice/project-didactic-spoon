@@ -19,29 +19,19 @@ void colorReset() {
 	printf("\033[0m");
 }
 
-struct element {
-	char elementName[50];
-	char sb[5];
-	int atm;
-	float atms;
-	char block;
-	char atc[20];
-	char prop[250];
-};
-
 int main() {
 	int choice;
 	
 	system("cls");
 	yellow();
 	printf("\n\n");
-	printf("   Welcome...\n");
+	printf("\t\t   Welcome...\n");
 	Sleep ( 300 );
-	printf("   Please enter your name: ");	
+	printf("\t\t   Please enter your name: ");	
 	char userName [20];
 	fscanf(stdin, "%20s", userName);
 	Sleep ( 1300 );
-	colorReset();
+	colorReset();	
 	system("cls");
 	table();
 	printf("\n\n");
@@ -62,10 +52,12 @@ printf("\t\t   3) Exit program\n");
 //		addElement();
 		break;
 		}
-		case 3:{printf("\t\t   Test 3\n");
+		case 3:{
 		system("cls");
-		printf("\t\t   Thanks for stopping by %s,\n", userName);
-		printf("\t\t   hope to see you again soon!\n");
+		printf("\n\n\t\t   Thanks for stopping by %s,\n", userName);
+		Sleep ( 300 );
+		printf("\t\t   ... hope to see you again soon!\n");
+		colorReset();
 		exit(1);
 		break;
 		}

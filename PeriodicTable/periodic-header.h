@@ -4,6 +4,9 @@
 #include <windows.h>
 #include <conio.h>
 #include <string.h>
+#include <stdbool.h>
+
+void introMenu();
 
 extern char userName[20];
 // Prints view of periodic table
@@ -16,3 +19,11 @@ void menuSelection();
 char selection[2];
 // Used to choose what you want to do with the program
 int choose();
+// Element Credentials
+extern char elementName[50];
+extern char sb[5];
+extern int atm;
+extern float atms;
+extern char block;
+extern char atc[20];
+extern char prop[250];
