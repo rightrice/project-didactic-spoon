@@ -9,7 +9,7 @@ struct element {
 	float atms;
 	char block;
 	char atc[20];
-	char notes[5000];
+	char notes[10000];
 	struct element *next;
 };
 

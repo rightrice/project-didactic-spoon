@@ -64,4 +64,5 @@ printf("\t\t   3) Exit program\n");
 		default: printf("\t\t   Sorry %s, that is not a valid option", userName); break;
 	}
 colorReset();
+
 }
