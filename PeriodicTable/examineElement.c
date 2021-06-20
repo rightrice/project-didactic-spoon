@@ -11,9 +11,9 @@ void examineElement(){
 	printf("\t\t   Please choose an option to filter for what element(s) you are looking for.\n");
 	printf("\t\t   1) Search by Element Name\n");
 	printf("\t\t   2) Search by Element Symbol\n");
-	printf("\t\t   3) Search by Atomic Weight\n");
+	printf("\t\t   3) Search by Atomic Mass\n");
 	printf("\t\t   4) Search by Atomic Number\n");
-	printf("\t\t   5) Restart and Return to Main Menu\n\n");
+	printf("\t\t   5) Return to Main Menu\n\n");
 	colorReset();
 	yellow();
 	choose(&search,5);

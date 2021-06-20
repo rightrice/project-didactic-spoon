@@ -9,9 +9,8 @@ void table(){
 	printf("\t                                   An interactive periodic\n");
 	printf("\t                                            table\n");
 	printf("\t                                =----------------------------=\n");
-	printf("\t                                      Created by Rhino\n");
-	printf("\t                                in association with [ ASPECT ]\n");
-	printf("\t                                =----------------------------=\n");
+	printf("\t                                          [ ASPECT ]\n");
+	printf("\n");
 	colorReset();
 	blue();
 	printf("\t+----+                                                                               +----+\n");

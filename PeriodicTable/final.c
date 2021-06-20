@@ -1,7 +1,7 @@
-/*	 +------------------+
-	 |  Periodic Table  |
-	 | Created by Rhino |
-	 +------------------+
+/*	 +-------------------+
+	 |  Periodic Table   |
+	 | Created by ASPECT |
+	 +-------------------+
 */
 
 #include "periodic-header.h"
@@ -19,18 +19,11 @@ void colorReset() {
 	printf("\033[0m");
 }
 
-int main() {
+
+
+int main(char *userName) {
 	int choice;
-	
-	system("cls");
-	yellow();
-	printf("\n\n");
-	printf("\t\t   Welcome...\n");
-	Sleep ( 300 );
-	printf("\t\t   Please enter your name: ");	
-	char userName [20];
-	fscanf(stdin, "%20s", userName);
-	Sleep ( 1300 );
+	loading();
 	colorReset();	
 	system("cls");
 	table();
@@ -53,15 +46,19 @@ printf("\t\t   3) Exit program\n");
 		break;
 		}
 		case 3:{
+		Sleep ( 900 );
 		system("cls");
-		printf("\n\n\t\t   Thanks for stopping by %s,\n", userName);
+		printf("\n\n\t\t   Thanks for stopping by\n");
 		Sleep ( 300 );
 		printf("\t\t   ... hope to see you again soon!\n");
 		colorReset();
 		exit(1);
 		break;
 		}
-		default: printf("\t\t   Sorry %s, that is not a valid option", userName); break;
+	default:{ 
+		printf("\t\t   Sorry that is not a valid option"); 
+		break;
+		}
 	}
 colorReset();
 

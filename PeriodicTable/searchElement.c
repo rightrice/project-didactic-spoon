@@ -1,4 +1,4 @@
-// Add Element
+// Search Element
 
 #include "periodic-header.h"
 

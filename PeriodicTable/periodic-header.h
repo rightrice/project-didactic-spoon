@@ -6,8 +6,7 @@
 #include <string.h>
 #include <stdbool.h>
 
-void introMenu();
-
+void loading();
 extern char userName[20];
 // Prints view of periodic table
 void table();
@@ -27,3 +26,6 @@ extern float atms;
 extern char block;
 extern char atc[20];
 extern char prop[250];
+
+// Main Menu
+void mainMenu();
