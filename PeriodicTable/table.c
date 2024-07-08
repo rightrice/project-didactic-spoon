@@ -6,10 +6,6 @@ void table(){
 	printf("\t                                +----------------------------+\n");
 	printf("\t                                | Periodic Table of Elements |\n");
 	printf("\t                                +----------------------------+\n");
-	printf("\t                                   An interactive periodic\n");
-	printf("\t                                            table\n");
-	printf("\t                                =----------------------------=\n");
-	printf("\t                                          [ ASPECT ]\n");
 	printf("\n");
 	colorReset();
 	blue();
@@ -34,5 +30,6 @@ void table(){
 	printf("\t       |----+----+----+----+----+----+----+----+----+----+----+----+----+----+----|\n");
 	printf("\t       | Ac | Th | Pa | U  | Np | Pu | Am | Cm | Bk | Cf | Es | Fm | Md | No | Lr |\n");
 	printf("\t       +----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+\n");
+	printf("\n");
 	colorReset();
 }
