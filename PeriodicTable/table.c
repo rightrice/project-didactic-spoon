@@ -2,16 +2,10 @@
 
 void table(){
 	yellow();
-	printf("\n\n\n");
-	printf("\t                                +----------------------------+\n");
-	printf("\t                                | Periodic Table of Elements |\n");
-	printf("\t                                +----------------------------+\n");
 	printf("\n");
-	colorReset();
-	blue();
-	printf("\t+----+                                                                               +----+\n");
-	printf("\t| H  |                                                                               | He |\n");
-	printf("\t|----+----+                                                 +----+----+----+----+----+----|\n");
+	printf("\t+----+              +----------------------------+                                   +----+\n");
+	printf("\t| H  |              | Periodic Table of Elements |                                   | He |\n");
+	printf("\t|----+----+         +----------------------------+          +----+----+----+----+----+----|\n");
 	printf("\t| Li | Be |                                                 | B  | C  | N  | O  | F  | Ne |\n");
 	printf("\t|----+----|                                                 |----+----+----+----+----+----|\n");
 	printf("\t| Na | Mg |                                                 | Al | Si | P  | S  | Cl | Ar |\n");
@@ -25,6 +19,8 @@ void table(){
 	printf("\t| Fr | Ra |    | Rf | Db | Sg | Bh | Hs | Mt | Ds | Rg | Cn | Uut| Fl | Uup| Lv | Uus| Uuo|\n");
 	printf("\t+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+\n");
 	printf("\n");
+	colorReset();
+	blue();
 	printf("\t       +----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+\n");
 	printf("\t       | La | Ce | Pr | Nd | Pm | Sm | Eu | Gd | Tb | Dy | Ho | Er | Tm | Yb | Lu |\n");
 	printf("\t       |----+----+----+----+----+----+----+----+----+----+----+----+----+----+----|\n");
